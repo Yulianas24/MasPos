@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  input,select {
+    @apply border-[1px] w-full h-[44px] p-2 rounded-md
+  }
+  
+select:hover {
+    @apply border-blue-500
+  }
+  input:hover {
+    @apply border-blue-500
+  }
+  label {
+    @apply text-sm text-[#303030]
+  }
+  .inp-box{
+    @apply mb-6
+  }
+  .form{
+    @apply w-full grid justify-items-center;
+  }
+  .btn{
+    @apply bg-[#0052CC] text-white  font-semibold px-10 py-2 rounded-md
+  }
+  .btn-trans{
+    @apply  bg-white border-[1px] border-blue-600 text-black 
+  }
+  .btn:hover{
+    @apply bg-[#1d4279] text-white
+  }
+
+}
